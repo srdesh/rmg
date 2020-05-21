@@ -1,0 +1,29 @@
+/*------------------------------------
+Custom CSS by Salman
+-------------------------------------*/
+
+
+/*header-footer*/
+.navigation .navigation__left{
+	max-width: 100%;
+}
+
+.header--1 .menu > li > a:hover{
+	color: #ffffff;
+}
+
+footer{
+	margin-top: 70px;
+}
+
+
+/*Homepage-4*/
+.custom-container-homepage4-banner{
+	max-width: 1650px;
+}
+
+
+/*Shop-default*/
+.ps-layout--shop{
+	padding-top: 70px;
+}
