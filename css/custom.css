@@ -4,6 +4,11 @@ Custom CSS by Salman
 
 
 /*header-footer*/
+.header.header--sticky .header__left .ps-logo
+{
+	display: visible;
+}
+
 .navigation .navigation__left{
 	max-width: 100%;
 }
