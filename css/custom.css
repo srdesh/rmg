@@ -6,7 +6,7 @@ Custom CSS by Salman
 /*header-footer*/
 .header.header--sticky .header__left .ps-logo
 {
-	display: visible;
+	display: initial;
 }
 
 .navigation .navigation__left{
