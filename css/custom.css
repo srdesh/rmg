@@ -32,3 +32,14 @@ footer{
 .ps-layout--shop{
 	padding-top: 70px;
 }
+
+
+/*Store list*/
+.ps-block--store h4{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.ps-block--store .ps-block__content{
+	border-top: 3px solid #fcb800;
+}
