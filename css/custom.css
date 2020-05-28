@@ -2,44 +2,149 @@
 Custom CSS by Salman
 -------------------------------------*/
 
+/*global*/
+.ps-product .ps-product__vendor{
+    padding-bottom: 0px;
+    color: #ffffff;
+}
+
 
 /*header-footer*/
-.header.header--sticky .header__left .ps-logo
-{
-	display: initial;
+
+.header.header--sticky .header__left .ps-logo {
+    display: initial;
 }
 
-.navigation .navigation__left{
-	max-width: 100%;
+.navigation .navigation__left {
+    max-width: 100%;
 }
 
-.header--1 .menu > li > a:hover{
-	color: #ffffff;
+.header--1 .menu>li>a:hover {
+    color: #ffffff;
 }
 
-footer{
-	margin-top: 70px;
+footer {
+    margin-top: 70px;
 }
 
 
 /*Homepage-4*/
-.custom-container-homepage4-banner{
-	max-width: 1650px;
+
+.custom-container-homepage4-banner {
+    max-width: 1650px;
 }
 
 
 /*Shop-default*/
-.ps-layout--shop{
-	padding-top: 70px;
+
+.ps-layout--shop {
+    padding-top: 70px;
 }
 
 
 /*Store list*/
-.ps-block--store h4{
-	margin-top: 20px;
-	margin-bottom: 0px;
+
+.ps-block--store h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
-.ps-block--store .ps-block__content{
-	border-top: 3px solid #fcb800;
+.ps-block--store .ps-block__content {
+    border-top: 3px solid #fcb800;
+}
+
+
+/*-----CSS Added by Reza------*/
+
+.bid-section {
+    display: table;
+    width: 100%;
+}
+
+.bid-sections {
+    display: table-cell;
+    position: relative;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+}
+
+.bid-sections:first-child {
+    padding-left: 0;
+}
+
+.bid-sections:before {
+    content: "";
+    height: 50px;
+    width: 1px;
+    background: #e1e1e1;
+    position: absolute;
+    right: 0;
+}
+
+.bid-sections:last-child:before {
+    background: transparent;
+}
+
+.bid-sections .heading {
+    font-size: 1.4rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.bid-sections .bid-data {
+    font-size: 18px;
+    color: #000;
+}
+
+.bid-data span {
+    color: #09c;
+}
+
+.badge-custom {
+    background-color: #09c;
+    color: #FFF;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 10px;
+    text-transform: none;
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.big-placeholder::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bidder-list th {
+    background-color: #f4f4f4;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 20px 20px;
+    vertical-align: middle;
+}
+
+.bidder-list td {
+    padding: 20px 20px !important;
+}
+
+.ps-btn, button.ps-btn{
+    background-color: #fcb800;
+    color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+    .bid-sections {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bid-sections:before {
+        background: transparent;
+    }
 }

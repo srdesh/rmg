@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from nouthemes.net/html/martfury/store-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2020 08:50:00 GMT -->
+<!-- Mirrored from nouthemes.net/html/martfury/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2020 08:36:58 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/autopart.css">
-    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -194,212 +192,137 @@
             </div>
         </div>
     </div>
-    
 
-    <div class="ps-page--single ps-page--vendor">
+    <div class="ps-page--simple">
         <div class="ps-breadcrumb">
             <div class="ps-container">
                 <ul class="breadcrumb">
-                    <li><a href="index-2.html">Home</a></li>
-                    <li>Store List</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop-default.html">Shop</a></li>
+                    <li>Checkout</li>
                 </ul>
             </div>
         </div>
-        <section class="ps-store-list">
+        <div class="ps-checkout ps-section--shopping">
             <div class="ps-container">
                 <div class="ps-section__header">
-                    <h3>Store list</h3>
+                    <h1>Checkout</h1>
                 </div>
-                <div class="ps-section__wrapper">
-
-                    <!-- store filter left -->
-                    <div class="ps-section__left">
-                        <aside class="widget widget--vendor">
-                            <h3 class="widget-title">Search</h3>
-                            <input class="form-control" type="text" placeholder="Search...">
-                        </aside>
-                        <aside class="widget widget--vendor">
-                            <h3 class="widget-title">Filter by Category</h3>
-                            <div class="form-group">
-                                <select class="ps-select">
-                                    <option>Select</option>
-                                    <option>Men's T-Shirt</option>
-                                    <option>Jeans</option>
-                                    <option>Ladies Clothing</option>
-                                    <option>Men's Clothing</option>
-                                    <option>Socks</option>
-                                </select>
-                            </div>
-                        </aside>
-                    </div>
-
-                    <!-- store main view right -->
-                    <div class="ps-section__right">
-                        <section class="ps-store-box">
-                            <div class="ps-section__header">
-                                <p>Showing 1 -8 of 22 results</p>
-                                <select class="ps-select">
-                                    <option value="1">Sort by Newest: old to news</option>
-                                    <option value="2">Sort by Newest: New to old</option>
-                                    <option value="3">Sort by average rating: low to hight</option>
-                                </select>
-                            </div>
-                            <div class="ps-section__content">
-                                <div class="row">
-                                    <!-- store-1 -->
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
-                                        <article class="ps-block--store">
-                                            <div class="ps-block__thumbnail bg--cover" data-background="img/vendor/store/1.jpg"></div>
-                                            <div class="ps-block__content">
-                                                <h4>Concorde Garments Limited</h4>
-                                                <select class="ps-rating" data-read-only="true">
-                                                    <option value="1">1</option>
-                                                    <option value="1">2</option>
-                                                    <option value="1">3</option>
-                                                    <option value="1">4</option>
-                                                    <option value="1">5</option>
-                                                </select>
-                                                <p>Plot M-3, Road 5, Sec. 7, Mirpur, Dhaka, Bangladesh, 1216</p>
-                                                <div class="ps-block__inquiry"><a href="#"></i> Visit Store</a></div>
-                                            </div>
-                                        </article>
+                <div class="ps-section__content">
+                    <form class="ps-form--checkout" action="http://nouthemes.net/html/martfury/do_action" method="post">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12  ">
+                                <div class="ps-form__billing-info">
+                                    <h3 class="ps-form__heading">Billing Details</h3>
+                                    <div class="form-group">
+                                        <label>First Name<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
                                     </div>
-                                    <!-- store-2 -->
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
-                                        <article class="ps-block--store">
-                                            <div class="ps-block__thumbnail bg--cover" data-background="img/vendor/store/1.jpg"></div>
-                                            <div class="ps-block__content">
-                                                <h4>Concorde Garments Limited</h4>
-                                                <select class="ps-rating" data-read-only="true">
-                                                    <option value="1">1</option>
-                                                    <option value="1">2</option>
-                                                    <option value="1">3</option>
-                                                    <option value="1">4</option>
-                                                    <option value="1">5</option>
-                                                </select>
-                                                <p>Plot M-3, Road 5, Sec. 7, Mirpur, Dhaka, Bangladesh, 1216</p>
-                                                <div class="ps-block__inquiry"><a href="#"></i> Visit Store</a></div>
-                                            </div>
-                                        </article>
+                                    <div class="form-group">
+                                        <label>Last Name<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
                                     </div>
-                                    <!-- store-3 -->
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
-                                        <article class="ps-block--store">
-                                            <div class="ps-block__thumbnail bg--cover" data-background="img/vendor/store/1.jpg"></div>
-                                            <div class="ps-block__content">
-                                                <h4>Concorde Garments Limited</h4>
-                                                <select class="ps-rating" data-read-only="true">
-                                                    <option value="1">1</option>
-                                                    <option value="1">2</option>
-                                                    <option value="1">3</option>
-                                                    <option value="1">4</option>
-                                                    <option value="1">5</option>
-                                                </select>
-                                                <p>Plot M-3, Road 5, Sec. 7, Mirpur, Dhaka, Bangladesh, 1216</p>
-                                                <div class="ps-block__inquiry"><a href="#"></i> Visit Store</a></div>
-                                            </div>
-                                        </article>
+                                    <div class="form-group">
+                                        <label>Company Name<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email Address<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Address<sup>*</sup>
+                                        </label>
+                                        <div class="form-group__content">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="ps-checkbox">
+                                            <input class="form-control" type="checkbox" id="create-account">
+                                            <label for="create-account">Create an account?</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="ps-checkbox">
+                                            <input class="form-control" type="checkbox" id="cb01">
+                                            <label for="cb01">Ship to a different address?</label>
+                                        </div>
+                                    </div>
+                                    <h3 class="mt-40"> Addition information</h3>
+                                    <div class="form-group">
+                                        <label>Order Notes</label>
+                                        <div class="form-group__content">
+                                            <textarea class="form-control" rows="7" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ps-pagination">
-                                    <ul class="pagination">
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">Next Page<i class="icon-chevron-right"></i></a></li>
-                                    </ul>
+                            </div>
+                            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12  ">
+                                <div class="ps-form__total">
+                                    <h3 class="ps-form__heading">Your Order</h3>
+                                    <div class="content">
+                                        <div class="ps-block--checkout-total">
+                                            <div class="ps-block__header">
+                                                <p>Product</p>
+                                                <p>Total</p>
+                                            </div>
+                                            <div class="ps-block__content">
+                                                <table class="table ps-block__products">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="#"> Sleeve Linen Blend Caro Pane Shirt ×1</a>
+                                                            </td>
+                                                            <td>$5.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h4 class="ps-block__title">Subtotal <span>$5.00</span></h4>
+                                                <div class="ps-block__shippings">
+                                                    <figure>
+                                                        <p>Free shipping</p><a href="#"> MVMTH Classical Leather Watch In Black ×1</a>
+                                                    </figure>
+                                                </div>
+                                                <h3>Total <span>$5.00</span></h3>
+                                            </div>
+                                        </div><a class="ps-btn ps-btn--fullwidth" href="checkout.html">Proceed to checkout</a>
+                                    </div>
                                 </div>
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </section>
-    </div>
-
-
-    <footer class="ps-footer ps-footer--3">
-        <div class="ps-container">
-            <div class="ps-block--site-features ps-block--site-features-2">
-                <div class="ps-block__item">
-                    <div class="ps-block__left"><i class="icon-rocket"></i></div>
-                    <div class="ps-block__right">
-                        <h4>Preview Sample</h4>
-                        <p>Get Sample Product</p>
-                    </div>
-                </div>
-                <div class="ps-block__item">
-                    <div class="ps-block__left"><i class="icon-sync"></i></div>
-                    <div class="ps-block__right">
-                        <h4>Verified Seller</h4>
-                        <p>By BGMEA Authority</p>
-                    </div>
-                </div>
-                <div class="ps-block__item">
-                    <div class="ps-block__left"><i class="icon-credit-card"></i></div>
-                    <div class="ps-block__right">
-                        <h4>Secure Payment</h4>
-                        <p>100% secure payment</p>
-                    </div>
-                </div>
-                <div class="ps-block__item">
-                    <div class="ps-block__left"><i class="icon-bubbles"></i></div>
-                    <div class="ps-block__right">
-                        <h4>24/7 Support</h4>
-                        <p>Dedicated support</p>
-                    </div>
-                </div>
-            </div>
-            <div class="ps-footer__widgets">
-                <aside class="widget widget_footer widget_contact-us">
-                    <h4 class="widget-title">Contact us</h4>
-                    <div class="widget_content">
-                        <p>Call us 24/7</p>
-                        <h3>+88 01730442211</h3>
-                        <p>BGMEA Complex, House # 7/7A, Sector # 17, Block # H-1, Uttara, Dhaka - 1230, Bangladesh. </p>
-                        <ul class="ps-list--social">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </aside>
-                <aside class="widget widget_footer">
-                    <h4 class="widget-title">Quick links</h4>
-                    <ul class="ps-list--link">
-                        <li><a href="#">Policy</a></li>
-                        <li><a href="#">Term & Condition</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                    </ul>
-                </aside>
-                <aside class="widget widget_footer">
-                    <h4 class="widget-title">BGMEA</h4>
-                    <ul class="ps-list--link">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                        <li><a href="#">Our Press</a></li>
-                    </ul>
-                </aside>
-                <aside class="widget widget_footer">
-                    <h4 class="widget-title">Others</h4>
-                    <ul class="ps-list--link">
-                        <li><a href="checkout.html">Checkout</a></li>
-                        <li><a href="my-account.html">My account</a></li>
-                        <li><a href="shop-default.html">Shop</a></li>
-                    </ul>
-                </aside>
-            </div>
-            
-            <div class="ps-footer__copyright">
-                <p>Developed by SSL Wireless</p>
-                <p><span>We Using Safe Payment For:</span><a href="#"><img src="img/payment-method/1.png" alt=""></a><a href="#"><img src="img/payment-method/2.jpg" alt=""></a><a href="#"><img src="img/payment-method/3.jpg" alt=""></a><a href="#"><img src="img/payment-method/5.jpg" alt=""></a><a href="#"><img src="img/payment-method/6.png" alt=""></a></p>
             </div>
         </div>
-    </footer>
-
-    <!-- back to top -->
+    </div>
+    <!--include ../../partials/sections/newsletter-->
+    <!--include ../../shared/footers/footer-->
     <div id="back2top"><i class="pe-7s-angle-up"></i></div>
     <div class="ps-site-overlay"></div>
     <div id="loader-wrapper">
@@ -414,8 +337,6 @@
             </form>
         </div>
     </div>
-
-    <!-- popup modal -->
     <div class="modal fade" id="product-quickview" tabindex="-1" role="dialog" aria-labelledby="product-quickview" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content"><span class="modal-close" data-dismiss="modal"><i class="icon-cross2"></i></span>
@@ -423,14 +344,15 @@
                     <div class="ps-product__header">
                         <div class="ps-product__thumbnail" data-vertical="false">
                             <div class="ps-product__images" data-arrow="true">
-                                <div class="item"><img src="img/products/detail/image-swatches/1.jpg" alt=""></div>
-                                <div class="item"><img src="img/products/detail/image-swatches/2.jpg" alt=""></div>
+                                <div class="item"><img src="img/products/detail/fullwidth/1.jpg" alt=""></div>
+                                <div class="item"><img src="img/products/detail/fullwidth/2.jpg" alt=""></div>
+                                <div class="item"><img src="img/products/detail/fullwidth/3.jpg" alt=""></div>
                             </div>
                         </div>
                         <div class="ps-product__info">
-                            <h1>Sleeve Linen Blend Caro Pane Shirt</h1>
+                            <h1>Marshall Kilburn Portable Wireless Speaker</h1>
                             <div class="ps-product__meta">
-                                <p>Brand:<a href="shop-default.html">POLO</a></p>
+                                <p>Brand:<a href="shop-default.html">Sony</a></p>
                                 <div class="ps-product__rating">
                                     <select class="ps-rating" data-read-only="true">
                                         <option value="1">1</option>
@@ -441,19 +363,18 @@
                                     </select><span>(1 review)</span>
                                 </div>
                             </div>
-                            <h4 class="ps-product__price">$3500</h4>
+                            <h4 class="ps-product__price">$36.78 – $56.99</h4>
                             <div class="ps-product__desc">
-                                <p>Sold By:<a href="shop-default.html"><strong> Muhammad Textile</strong></a></p>
+                                <p>Sold By:<a href="shop-default.html"><strong> Go Pro</strong></a></p>
                                 <ul class="ps-list--dot">
-                                    <li> Care Instructions: Gentle Machine Wash Onl</li>
-                                    <li> Fit Type: Slim Fit </li>
-                                    <li> Fabric: Cotton </li>
-                                    <li> Sleeve Type: Full Sleeve </li>
-                                    <li> Size: XS, S, M, L, XL, XXL, XXXL </li>
-                                    <li> Quantity: 1,200 Pieces </li>
+                                    <li> Unrestrained and portable active stereo speaker</li>
+                                    <li> Free from the confines of wires and chords</li>
+                                    <li> 20 hours of portable capabilities</li>
+                                    <li> Double-ended Coil Cord with 3.5mm Stereo Plugs Included</li>
+                                    <li> 3/4″ Dome Tweeters: 2X and 4″ Woofer: 1X</li>
                                 </ul>
                             </div>
-                            <div class="ps-product__shopping"><a class="ps-btn ps-btn--black" href="#">Buy Sample($5)</a><a class="ps-btn" href="#">Make Offer</a>
+                            <div class="ps-product__shopping"><a class="ps-btn ps-btn--black" href="#">Add to cart</a><a class="ps-btn" href="#">Buy Now</a>
                                 <div class="ps-product__actions"><a href="#"><i class="icon-heart"></i></a><a href="#"><i class="icon-chart-bars"></i></a></div>
                             </div>
                         </div>
@@ -462,10 +383,7 @@
             </div>
         </div>
     </div>
-
-
-    <!-- scripts -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="plugins/jquery-1.12.4.min.js"></script>
+    <script src="plugins/jquery-1.12.4.min.js"></script>
     <script src="plugins/popper.min.js"></script>
     <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
     <script src="plugins/bootstrap4/js/bootstrap.min.js"></script>
@@ -488,5 +406,5 @@
 </body>
 
 
-<!-- Mirrored from nouthemes.net/html/martfury/store-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2020 08:50:22 GMT -->
+<!-- Mirrored from nouthemes.net/html/martfury/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2020 08:36:58 GMT -->
 </html>
