@@ -63,12 +63,6 @@ footer {
     border-top: 3px solid #fcb800;
 }
 
-/*product default*/
-.ps-product__specification p,
-.ps-product__sharing{
-    display: flex;
-}
-
 
 /*-----CSS Added by Reza------*/
 
@@ -160,6 +154,9 @@ button.ps-btn {
     text-align: right;
 }
 
+
+/*
+
 .prototype-text {
     position: relative;
 }
@@ -189,6 +186,24 @@ button.ps-btn {
     position: absolute;
     right: -30px;
 }
+
+.ps-product__specification .categories .prototype-text,
+.ps-product__specification .tags .prototype-text,
+.ps-product__sharing .prototype-text,
+.ps-product__actions .prototype-text {
+    display: inline-block;
+}
+
+.ps-product__actions .prototype-text {
+    width: 45px;
+}
+
+.ps-product--detail .ps-product__sharing .prototype-text {
+    margin-right: 5px !important;
+    margin-left: 0 !important;
+}
+
+*/
 
 @media screen and (max-width:768px) {
     .bid-sections {
