@@ -2,10 +2,20 @@
 Custom CSS by Salman
 -------------------------------------*/
 
+
 /*global*/
-.ps-product .ps-product__vendor{
+
+.ps-product .ps-product__vendor {
     padding-bottom: 0px;
     color: #ffffff;
+}
+
+.ps-footer__copyright p {
+    width: 60%;
+}
+
+.ps-footer__copyright a img {
+    max-width: 70%;
 }
 
 
@@ -51,6 +61,12 @@ footer {
 
 .ps-block--store .ps-block__content {
     border-top: 3px solid #fcb800;
+}
+
+/*product default*/
+.ps-product__specification p,
+.ps-product__sharing{
+    display: flex;
 }
 
 
@@ -133,9 +149,45 @@ footer {
     padding: 20px 20px !important;
 }
 
-.ps-btn, button.ps-btn{
+.ps-btn,
+button.ps-btn {
     background-color: #fcb800;
     color: #ffffff;
+}
+
+.navigation__extra {
+    width: 100%;
+    text-align: right;
+}
+
+.prototype-text {
+    position: relative;
+}
+
+.prototype-text:before {
+    content: "This is a Prototype";
+    height: 30px;
+    width: 140px;
+    color: #FFF;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    padding: 5px 10px;
+    font-size: 13px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 3px;
+}
+
+.prototype-text:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.prototype-text .ps-product__remove i {
+    position: absolute;
+    right: -30px;
 }
 
 @media screen and (max-width:768px) {
