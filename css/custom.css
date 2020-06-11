@@ -48,7 +48,7 @@ footer {
 /*Shop-default*/
 
 .ps-layout--shop {
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 
@@ -152,6 +152,15 @@ button.ps-btn {
 .navigation__extra {
     width: 100%;
     text-align: right;
+}
+
+.ps-post-comments.new-style {
+    max-width: 100%;
+}
+
+.ps-post-comments.new-style .ps-block--comment>.ps-block__content {
+    padding: 0 0 30px 0;
+    border-top: 0;
 }
 
 
